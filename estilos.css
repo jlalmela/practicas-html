@@ -1,0 +1,87 @@
+.home{
+    width: 100%;
+    height: 75vh;
+    background-image: url("Logo_srmilton.svg"); 
+    background-size: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0,24px;
+    box-sizing: border-box;
+
+}
+ul {
+    list-style-type: none; /* Quitamos los puntos de la lista */
+    overflow: hidden; /* Ocultamos los elementos que sobresalen */
+    
+  }
+  
+  li {
+    float: left; /* Hacemos que los elementos de la lista se coloquen uno al lado del otro */
+    margin: 0 12px;
+}
+  
+  li a {
+    display: block; /* Hacemos que cada enlace ocupe todo el ancho del elemento li */
+    color: rgb(113, 111, 111); /* Le añadimos un color de texto */
+    text-align: center; /* Alineamos el texto al centro */
+    padding: 10px 16px; /* Le añadimos espacio en la parte superior y inferior */
+    text-decoration: none; /* Quitamos el subrayado del enlace */
+    border: 2px solid #666766;
+    
+  }
+  
+  li a:hover {
+    background-color: rgb(19, 19, 19); /* Cambiamos el color de fondo cuando el usuario pasa el ratón por encima */
+    color: rgb(246, 243, 243);
+  }
+
+.content {
+    width: auto;    
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 4;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+.content h1 {
+    width: 600px;
+}
+
+.footer{
+    width: 100%;
+    height: 280px;
+    background-color: black;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.footer1{
+    flex:33.33%;
+}        
+.footer2{
+    flex:33.33%;
+}
+.footer3{
+    flex:33.33%;
+}
+
+img {
+    width: 150px;
+    padding: 10px 10px;
+  }
