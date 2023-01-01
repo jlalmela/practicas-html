@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.contenedor {
+  background-color: rgb(60, 61, 61);
+  padding: 30;
+  display: flex;
+}
+
+.div1 {
+  border: 1px solid;
+  border-color: black;
+  border-radius: 1px;
+  background-color: bisque;
+  height: auto;
+  min-width: 200px;
+}
+.div2 {
+  width: auto;
+  height: auto;
+  border: 1px solid;
+  border-color: black;
+  min-width: 200px;
+}
+.div3 {
+  height: auto;
+  width: auto;
+  border: 1px solid;
+  border-color: black;
+  min-width: 200px;
+}
