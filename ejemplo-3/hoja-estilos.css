@@ -10,10 +10,15 @@
 }
 
 .cabecera{
+  padding: 10px;
+  display: flex;
   font-family: mi-fuente;
   font-size: 40px;
   text-align: center;
-  color: blue;
+  color: #008ab3;
+  justify-content: space-between;
+  background-color: #eff2f2;
+  
 }
 
 .contenedor {
@@ -31,7 +36,7 @@
 }
 
 .div1 {
-  border: 1px solid;
+  border: 1px solid rgb(134, 137, 102);
   border-color: rgb(134, 137, 102);
   background-color: rgb(225, 171, 220);
   width: auto;
@@ -65,4 +70,11 @@
   padding: 5px;
   text-align: left;
   text-align: justify;  
+}
+
+.❤️{
+  border: 1px solid;
+  background-color: rgb(103, 101, 101);
+  height: 100px;
+  
 }
