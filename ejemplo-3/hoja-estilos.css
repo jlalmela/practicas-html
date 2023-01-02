@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  
+}
+
+@font-face {
+  font-family: mi-fuente;
+  src: url(mi-fuente.ttf);
+}
+
+.cabecera{
+  font-family: mi-fuente;
+  font-size: 40px;
+  text-align: center;
+  color: blue;
+}
+
+.contenedor {
+  background-color: rgb(249, 249, 250);
+  padding: 30;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+    
+}
+
+.div3 img{
+  height: 100%;
+  width: 100%;
+}
+
+.div1 {
+  border: 1px solid;
+  border-color: rgb(134, 137, 102);
+  background-color: rgb(225, 171, 220);
+  width: auto;
+  height: auto;
+  margin: 10px;
+  
+    
+}
+.div2 {
+  border: 1px solid;
+  border-color: rgb(134, 137, 102);
+  border-radius: 1px;
+  background-color: rgb(225, 171, 220);
+  height: auto;
+  min-width: 300px;
+  max-width: 500px;
+  margin: 10px;
+  padding: 5px;
+  text-align: left;
+  text-align: justify;  
+}
+.div3 {
+  border: 1px solid;
+  border-color: rgb(134, 137, 102);
+  border-radius: 1px;
+  background-color: rgb(225, 171, 220);
+  height: auto;
+  min-width: 300px;
+  max-width: 500px;
+  margin: 10px;
+  padding: 5px;
+  text-align: left;
+  text-align: justify;  
+}
