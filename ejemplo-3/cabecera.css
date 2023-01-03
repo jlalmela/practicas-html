@@ -1,0 +1,87 @@
+.cabecera {
+  width: 100%;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 10px;
+  display: flex;
+  font-family: "Montserrat", san serif;
+  font-size: 12px;
+  text-align: center;
+  justify-content: space-between;
+  background-color: #cccccc;
+  /*background-image: url('logo.svg'); coloca una imagen de fondo*/
+}
+
+.logo {
+  fill: rgb(114, 32, 32);
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none; /* Quitamos los puntos de la lista */
+  overflow: hidden; /* Ocultamos los elementos que sobresalen */
+}
+
+li {
+  float: left; /* Hacemos que los elementos de la lista se coloquen uno al lado del otro */
+  margin: 30px 20px;
+}
+
+li a {
+  display: block; /* Hacemos que cada enlace ocupe todo el ancho del elemento li */
+  color: rgb(22, 21, 21); /* Le añadimos un color de texto */
+  text-align: center; /* Alineamos el texto al centro */
+  text-decoration: none; /* Quitamos el subrayado del enlace */
+  padding: 10px 20px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+}
+
+li a:hover {
+  background: rgb(63, 61, 61);
+  color: white;
+}
+
+@media only screen and (min-width: 1000px) {
+  .menu-normal {
+    display: block;
+  }
+  .menu-hamburguesa {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .menu-normal {
+    display: none;
+  }
+  .cabecera {
+    background-color: rgb(225, 179, 219);
+    position: relative;
+    top:auto;
+    left:auto;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  ul {
+    margin: 0, 1, 1, 1;
+    padding: 0;
+    
+  }
+  li {
+    margin: 0;
+    padding: 0;
+    
+  }
+  .logo{
+    margin: 20px;
+    width: 100px;
+
+   }
+  .foot{
+    font-size: 20px;
+  }
+   
+}

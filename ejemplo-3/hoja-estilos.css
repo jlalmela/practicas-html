@@ -1,49 +1,42 @@
+@import "cabecera.css";
+@import "footer.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
-  
-}
-
-@font-face {
-  font-family: mi-fuente;
-  src: url(mi-fuente.ttf);
-}
-
-.cabecera{
-  padding: 10px;
-  display: flex;
-  font-family: mi-fuente;
-  font-size: 40px;
-  text-align: center;
-  color: #008ab3;
-  justify-content: space-between;
-  background-color: #eff2f2;
-  
 }
 
 .contenedor {
-  background-color: rgb(249, 249, 250);
-  padding: 30;
+  background-color: rgb(155, 155, 224);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-    
+  object-fit: contain;
 }
 
-.div3 img{
+.contenedor img {
+  object-fit: contain;
+  object-position: top;
+}
+
+.div3 img {
   height: 100%;
   width: 100%;
 }
 
 .div1 {
-  border: 1px solid rgb(134, 137, 102);
+  border: 1px solid;
   border-color: rgb(134, 137, 102);
+  border-radius: 1px;
   background-color: rgb(225, 171, 220);
-  width: auto;
   height: auto;
+  min-width: 300px;
+  width: 33,33%;
   margin: 10px;
-  
-    
+  padding: 5px;
+  text-align: left;
+  text-align: justify;
 }
 .div2 {
   border: 1px solid;
@@ -52,11 +45,11 @@
   background-color: rgb(225, 171, 220);
   height: auto;
   min-width: 300px;
-  max-width: 500px;
+  width: 33,33%;
   margin: 10px;
   padding: 5px;
   text-align: left;
-  text-align: justify;  
+  text-align: justify;
 }
 .div3 {
   border: 1px solid;
@@ -65,17 +58,9 @@
   background-color: rgb(225, 171, 220);
   height: auto;
   min-width: 300px;
-  max-width: 500px;
+  width: 33,33%;
   margin: 10px;
   padding: 5px;
   text-align: left;
-  text-align: justify;  
-}
-
-.❤️{
-  border: 1px solid;
-  background-color: rgb(103, 101, 101);
-  height: 100px;
-  color: rgb(251, 247, 247);
-  
+  text-align: justify;
 }
