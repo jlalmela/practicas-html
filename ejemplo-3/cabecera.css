@@ -49,7 +49,7 @@ li a:hover {
     display: none;
   }
 }
-
+ 
 @media only screen and (max-width: 1000px) {
   .menu-normal {
     display: none;
