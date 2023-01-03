@@ -112,9 +112,10 @@ li a:hover {
   height: 100px;
   background-color: black;
   color: rgb(38, 36, 36);
-  text-align: center;
+  text-align: left;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 .footer1 {
   background-color: black;
