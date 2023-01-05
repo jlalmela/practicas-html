@@ -5,15 +5,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="estilos.css" rel="stylesheet" />
+    <link href="css/estilos.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   </head>
   <body>
     <!--cabecera de nuestra página-->
     <header class="header">
       <div class="container logo-nav-container">
-        <object data="logo.svg" width="50px" class="logo"></object>
-        <!--elemento logo:   <a href="#" class="logo">LOGO</a> -->
+        <img src="img/logo.svg" width="50px" class="logo" />
+        <span class="menu-icon">VER MENU</span>
         <nav class="navigation">
           <ul>
             <li><a href="#">INICIO</a></li>
@@ -29,30 +29,86 @@
     <main class="main">
       <!--cuerpo de la página-->
       <div class="container">
-      <h1>WEB DE SR. MILTON</h1>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus iure,
-        est quasi corrupti aliquam a sapiente quas sed culpa optio dolorem
-        doloremque, beatae sint, fugiat eligendi? Velit facilis sunt quam? Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo, in
-        possimus, excepturi est exercitationem rem eaque saepe, quis doloremque
-        maiores ullam animi quo iusto alias eos nostrum voluptatem nesciunt?
-      </p>
-      <hr color= red size="1px" width="100%" />
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus iure,
-        est quasi corrupti aliquam a sapiente quas sed culpa optio dolorem
-        doloremque, beatae sint, fugiat eligendi? Velit facilis sunt quam? Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo, in
-        possimus, excepturi est exercitationem rem eaque saepe, quis doloremque
-        maiores ullam animi quo iusto alias eos nostrum voluptatem nesciunt?
-      </p>
+        <h1>WEB DE SR. MILTON</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus iure,
+          est quasi corrupti aliquam a sapiente quas sed culpa optio dolorem
+          doloremque, beatae sint, fugiat eligendi? Velit facilis sunt quam?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          explicabo, in possimus, excepturi est exercitationem rem eaque saepe,
+          quis doloremque maiores ullam animi quo iusto alias eos nostrum
+          voluptatem nesciunt?
+        </p>
+        <hr color="red" size="1px" width="100%" />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus iure,
+          est quasi corrupti aliquam a sapiente quas sed culpa optio dolorem
+          doloremque, beatae sint, fugiat eligendi? Velit facilis sunt quam?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          explicabo, in possimus, excepturi est exercitationem rem eaque saepe,
+          quis doloremque maiores ullam animi quo iusto alias eos nostrum
+          voluptatem nesciunt?
+        </p>
+        <hr color="red" size="1px" width="100%" />
+
+        <table class="tabla">
+          <tr>
+            <td class="color1">#3c3c3c</td>
+          </tr>
+          <tr class="color1">
+            <td class="color2">#515151</td>
+          </tr>
+          <tr>
+            <td class="color3">666666</td>
+          </tr>
+          <tr>
+            <td class="color4">#8c8c8c</td>
+          </tr>
+          <tr>
+            <td class="color5">#b5b5b5</td>
+          </tr>
+        </table>
       </div>
     </main>
     <asside><!--en este caso no lo utilizamos--> </asside>
     <footer class="footer">
       <!--pie de página-->
-      <div class="container"></div>
+      <div class="grupo1">
+        <div class="box">
+          <figure>
+            <a href="http://srmilton.rf.gd">
+              <img src="img/logo.svg" width="40rem" alt="logo" />
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>SOBRE MI</h2>
+          <p>informacion 1</p>
+          <p>Informacion 2</p>
+        </div>
+        <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+            <a href="#">
+              <img src="img/logo-linkedin.svg" width="40rem" alt="linkedin" />
+            </a>
+            <a href="#">
+              <img src="img/logo-twitter.svg" width="40rem" alt="twitter" />
+            </a>
+            <a href="#">
+              <img src="img/logo-instagram.svg" width="40rem" alt="instagram" />
+            </a>
+            <a href="#">
+              <img src="img/logo-facebook.svg" width="40rem" alt="instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo2">
+        <small>&copy; 2023 <b>Sr. Milton</b> - Todos los Derechos reservados.</small>
+      </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

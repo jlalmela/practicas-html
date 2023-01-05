@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Cambria", Times, serif, sans-serif;
+  color: #333;
+  font-size: 1.2rem; /* rem se refiere al tamaño de la fuente en el elemento raiz */
+  line-height: 1.4em; /* em se refiere al tamaño de la fuente del el elemento donde está contenido */
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.3em; /* interlineado del texto */
+}
+
+h2 {
+  font-size: 1.1rem;
+  line-height: 1.3em; /* interlineado del texto */
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1.6em;
+}
+
+.container {
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #333;
+  color: white;
+  padding: 2rem 0;
+  position: fixed; /* hace que se quede fijo la cabecera*/
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.header a {
+  color: white;
+  text-decoration: none; /* quita el subrayado*/
+  align-items: center;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s linear;
+  border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+  background: rgb(119, 118, 118);
+}
+
+.main {
+  padding-top: 10rem;
+}
+
+/* Pie de página */
+
+.footer {
+  display: flex;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  padding: 4rem;
+  margin-top: 6rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.foot1 {
+  flex: 33.33%;
+  padding: 10px;
+}
+
+.foot2 {
+  flex: 33.33%;
+  padding: 10px;
+}
+
+.foot3 {
+  flex: 33.33%;
+  padding: 10px;
+}
+
+/* Clases para los elementos cuando la pantalla del navegador es más pequeña */
+
+@media only screen and (max-width: 767px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+  }
+
+  .navigation {
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  .navigation ul {
+    display: none;
+  }
+
+  .navigation ul.show {
+    display: block;
+  }
+
+  .navigation ul li {
+    display: block;
+  }
+
+  .navigation ul li a {
+    display: block;
+    padding: 0.5rem 0;
+    transition: all 0.2s linear;
+    border-radius: 5px;
+  }
+
+  .navigation ul li a:hover {
+    background: rgb(119, 118, 118);
+  }
+}
+
+/* tabla en html */
+
+.tabla {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  height: 200px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.color1 {
+  background-color: #3c3c3c;
+  color: white;
+}
+
+.color2 {
+  background-color: #515151;
+}
+
+.color3 {
+  background-color: #666666;
+}
+
+.color4 {
+  background-color: #8c8c8c;
+}
+
+.color5 {
+  background-color: #b5b5b5;
+}
