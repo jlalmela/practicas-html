@@ -74,6 +74,7 @@ p {
   padding: 0.5rem 1rem;
   transition: all 0.2s linear;
   border-radius: 5px;
+  font-size: 1.2rem;
 }
 
 .navigation ul li a:hover {
@@ -90,53 +91,61 @@ p {
   height: 100%;
   background-color: #3c3c3c;
   color: white;
-  flex-wrap: wrap;
 }
 
-.pie-pagina .grupo1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.pie-pagina .grupo1 .col1 {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 33.33%;
-}
-
-.pie-pagina .grupo1 .col2 {
-  text-align: center;
-  width: 33.33%;
-  margin-top: 1rem;
-}
-
-.pie-pagina .grupo1 .col2 p {
-  margin: 0;
-}
-
-
-.pie-pagina .grupo1 .col3 {
-  margin-top: 1rem;
-  text-align: center;
-  display: block;
-  width: 33.33%;
-  align-items: center;
-
-}
-
-.pie-pagina .grupo1 .col3 img {
-  margin: 10px;
-}
-
-
-.pie-pagina .grupo2 {
+.pie1 {
+  height: 100%;
   background-color: #3c3c3c;
-  padding: 15px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.box1 {
+  width: 22.33%;
   text-align: center;
+  min-width: 368px;
+  margin-top: 30px;
+}
+
+.box1 img {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.box2 {
+  width: 22.33%;
+  min-width: 368px;
+}
+
+.box2 h2 {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+}
+
+.box3 {
+  width: 22.33%;
+  text-align: center;
+  min-width: 368px;
+  align-items: baseline;
+}
+
+.box3 img {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 40px;
+}
+
+.pie-pagina .pie2 {
+  background-color: #3c3c3c;
+  padding: 10px 10px;
+  text-align: center;
+  font-weight: 300;
 }
 
 /* Clases para los elementos cuando la pantalla del navegador es más pequeña */
