@@ -6,19 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/estilos.css" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
   <body>
-    <!--cabecera de nuestra página-->
+    <!--CABECERA DE LA PÁGINA-->
     <header class="header">
       <div class="container logo-nav-container">
         <img src="img/logo.svg" width="50px" class="logo" />
-        <!--<span class="menu-icon">VER MENU</span> -->
-        <!--<span class="menu-icon"><i class="fa fa-bars"></i></span>-->
         <span class="menu-icon"><img src="img/logo-menu.svg" width="30px"></span>
         <nav class="navigation">
           <ul>
@@ -76,7 +74,17 @@
         </table>
       </div>
     </main>
+    <!--AVISO COOKIES-->
+    <div class="aviso-cookies" id="aviso-cookies">
+      <img class="galleta" src="./img/cookie.svg" alt="Galleta">
+      <h3 class="titulo">Cookies</h3>
+      <p class="parrafo">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
+      <button class="boton" id="btn-aceptar-cookies">De acuerdo</button>
+      <a class="enlace" href="html/aviso-cookies.html">Aviso de Cookies</a>
+    </div>
+    <div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
 
+    <!-- PIE DE PÁGINA DE LA WEB -->
     <footer class="pie-pagina">
       <div class="pie1">
         <div class="box1">
@@ -88,7 +96,7 @@
         </div>
         <div class="box2">
           <a href="#"><h2>Política de Privacidad</h2></a>
-          <a href="#"><h2>Política de cookies</h2></a>
+          <a href="html/aviso-cookies.html"><h2>Política de cookies</h2></a>
           <a href="#"><h2>Aviso Legal</h2></a>
           <a href="#"><h2>Mapa del web</h2></a>
         </div>
