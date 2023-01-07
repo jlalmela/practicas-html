@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: blue;
+    }
+
+    .logo {
+      display: block;
+      margin: auto;
+      margin-top: 250px;
+      max-width: 200px;
+      height: auto;
+      max-height: 500px;
+    }
+
+    .rotate-scale-up:hover{
+        
+      -webkit-animation: rotate-scale-up 0.65s linear both;
+      animation: rotate-scale-up 0.65s linear both;
+    }
+
+
+    @-webkit-keyframes rotate-scale-up {
+      0% {
+        -webkit-transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0);
+      }
+      50% {
+        -webkit-transform: scale(2) rotateZ(180deg);
+        transform: scale(2) rotateZ(180deg);
+      }
+      100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg);
+      }
+    }
+    @keyframes rotate-scale-up {
+      0% {
+        -webkit-transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0);
+      }
+      50% {
+        -webkit-transform: scale(2) rotateZ(180deg);
+        transform: scale(2) rotateZ(180deg);
+      }
+      100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg);
+      }
+    }
+  </style>
+
+  <body>
+    <div>
+      <img src="logo.svg" width="250px" class="rotate-scale-up logo" />
+    </div>
+  </body>
+</html>
