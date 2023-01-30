@@ -232,7 +232,6 @@ p {
 
 .video-container{
   width: 100%;
-  position: relative;
   height: auto;
   overflow: hidden;
   text-align: center;
