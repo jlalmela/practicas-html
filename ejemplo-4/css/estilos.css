@@ -240,7 +240,8 @@ p {
   filter: grayscale(100%);
 }
 
-.video {
+/*
+.xvideo {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -249,7 +250,7 @@ p {
   min-height: 100%;
   
   
-}
+}*/
 
 
 /* AVISO DE COOKIES */
