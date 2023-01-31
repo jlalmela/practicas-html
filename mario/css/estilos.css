@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 10px;
+}
+
+.h3 {
+  margin-bottom: 20px;
+}
+
+.menu {
+  margin: 10px;
+}
+
+.header {
+  height: 200px;
+  background-color: rgb(133, 133, 136);
+  text-align: center;
+}
+
+.menu-navegacion a {
+  border-radius: 5px;
+  border: 10px solid white;
+  background-color: aliceblue;
+  margin: 10px;
+}
+.copy {
+  color: white;
+  font-size: 18pt;
+}
+
+.quienessomos {
+  background-color: bisque;
+}
+
+.gallery {
+  background-color: rgb(180, 192, 188);
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: row;
+}
+.gallery img {
+  width: auto;
+  height: 200px;
+  
+}
+
+.caracteristicas{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.caracteristicas img {
+  width: auto;
+  height: 200px;
+  
+}
+
+.iconos i {
+  font-size: 50px;
+  color: white;
+}
+
+.footer {
+  background-color: gray;
+  text-align: center;
+  color: rgb(249, 245, 245);
+}
