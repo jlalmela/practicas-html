@@ -22,21 +22,10 @@ margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-
-}
-
-.pato{
-    background-image: url('pato.svg'); 
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50%;
     
 }
 
-.circulos{
-    background-image: url('circulos.svg'); 
-    background-repeat: no-repeat;
-    background-position: center center;
+.fondo{
+    background-image: url('fondo.svg');
     background-size: 50%;
-    
 }
