@@ -13,7 +13,6 @@
 .contenedor {
     border: 5px solid black;
     background-image: url(fondo.svg);
-
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

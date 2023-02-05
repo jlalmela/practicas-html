@@ -9,9 +9,9 @@
     <title>Grid</title>
 </head>
 
-<body>
+<body id="body">
     <main>
-        <article class="main">
+        <article>
             <div class="contenedor">
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet architecto eum
                     molestiae voluptate itaque sequi laudantium minima! Odio rem in voluptatum ut soluta possimus,
@@ -36,7 +36,22 @@
         image2.addEventListener("click", function () {
             document.body.style.backgroundColor = "red";
         });
-        
+
+        var body = document.getElementById("body");
+        body.addEventListener("click", changeBackgroundColor);
+
+        function changeBackgroundColor() {
+            body.style.backgroundColor = getRandomColor();
+        }
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
     </script>
 </body>
 
