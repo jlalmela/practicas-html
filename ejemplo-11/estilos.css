@@ -12,6 +12,7 @@
 .contenedor {
     border: 5px solid black;
     background-image: url(fondo.svg);
+  
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -19,12 +20,20 @@
     height: 200px;
     margin: 20px 20px 20px 20px;
     display: flex;
-    align-items: center;
-    align-content: center;
+    flex-direction: column;
+    align-content: space-between;
     background-color: aliceblue;
+
 }
 
 .contenedor p{
     margin: 20px;
 
+}
+
+#letras-fondo{
+    border: 3px solid red;
+    background-color: rgb(179, 178, 181);
+    color: rgb(80, 78, 78);
+    margin: 20px;
 }
