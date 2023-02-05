@@ -5,6 +5,7 @@
 .main {
     background-color: rgb(166, 125, 125);
     justify-content: center;
+    flex-direction: column;
     display: flex;
 
 }
@@ -12,7 +13,7 @@
 .contenedor {
     border: 5px solid black;
     background-image: url(fondo.svg);
-  
+
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,14 +27,20 @@
 
 }
 
-.contenedor p{
+.contenedor p {
     margin: 20px;
 
 }
 
-#letras-fondo{
+#letras-fondo {
     border: 3px solid red;
     background-color: rgb(179, 178, 181);
     color: rgb(80, 78, 78);
     margin: 20px;
+}
+
+
+#imagen1,
+   width: 50px;
+    
 }
