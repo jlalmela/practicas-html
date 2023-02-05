@@ -8,7 +8,6 @@
     flex-direction: column;
     display: flex;
     align-items: center;
-
 }
 
 .contenedor {
@@ -27,8 +26,6 @@
     align-items: center;
     background-color: rgb(103, 132, 158);
     text-align: center;
-    
-
 }
 
 .contenedor p {
@@ -40,30 +37,28 @@
 #letras-fondo {
     width: 90%;
     border: 3px solid red;
-    background-color: rgb(179, 178, 181,0.2);
+    background-color: rgb(179, 178, 181, 0.2);
     color: rgb(80, 78, 78);
     margin: 20px;
     position: relative;
 }
 
-#letras-fondo:hover{
+#letras-fondo:hover {
     background-color: rgba(10, 9, 10);
-   color: white;
+    color: white;
 }
 
-
-#imagen1{
-   width: 100px;
-   position: absolute;
-   top: 10px;
-   left: 255px;
- }
-
-
-#imagen2{
+#imagen1 {
     width: 100px;
     position: absolute;
     top: 10px;
-    left: 250px;
-    
- }
+    left: 255px;
+}
+
+#imagen2 {
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 300px;
+
+}

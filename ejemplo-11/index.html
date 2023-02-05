@@ -8,29 +8,36 @@
     <link href="estilos.css" rel="stylesheet" />
     <title>Grid</title>
 </head>
-<svg xmlns="http://www.w3.org/2000/svg"></svg>
 
 <body>
     <main>
         <article class="main">
             <div class="contenedor">
-
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet architecto eum
                     molestiae voluptate itaque sequi laudantium minima! Odio rem in voluptatum ut soluta possimus,
-                    iusto
-                    quidem enim deserunt aspernatur.</p>
-                <div ID="letras-fondo">
+                    iusto quidem enim deserunt aspernatur.</p>
+                <div ID="letras-fondo" id="letras">
                     <p>LETRAS DE FONDO</p>
                     <img src="dragon-1.svg" alt="descripción de la imagen" id="imagen1">
                     <img src="dragon-2.svg" alt="descripción de la imagen" id="imagen2">
                 </div>
-
             </div>
         </article>
-       
-
     </main>
+    <script>
+        var image = document.getElementById("imagen1");
 
+        image.addEventListener("click", function () {
+            document.body.style.backgroundColor = "blue";
+        });
+
+        var image2 = document.getElementById("imagen2");
+
+        image2.addEventListener("click", function () {
+            document.body.style.backgroundColor = "red";
+        });
+        
+    </script>
 </body>
 
 </html>
