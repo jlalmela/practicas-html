@@ -46,11 +46,16 @@
     position: relative;
 }
 
+#letras-fondo:hover{
+    background-color: rgba(10, 9, 10);
+   color: white;
+}
+
 
 #imagen1{
    width: 100px;
    position: absolute;
-   top: 0;
+   top: 10px;
    left: 255px;
  }
 
@@ -58,7 +63,7 @@
 #imagen2{
     width: 100px;
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 250px;
     
  }
