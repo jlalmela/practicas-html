@@ -8,13 +8,59 @@
     <link href="estilos.css" rel="stylesheet" />
     <title>Fondo-svg</title>
 </head>
-<svg xmlns="http://www.w3.org/2000/svg"></svg>
 
+<<<<<<< HEAD
 <body>
     <main class="main">
         <div class="contenedor">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ea eveniet laborum inventore libero porro ducimus hic corporis ad! Officiis voluptas culpa recusandae ipsum dolorum, impedit neque quod repudiandae nobis.</p>
         </div>
     </main>
+=======
+<body id="body">
+    <main>
+        <article>
+            <div class="contenedor">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet architecto eum
+                    molestiae voluptate itaque sequi laudantium minima! Odio rem in voluptatum ut soluta possimus,
+                    iusto quidem enim deserunt aspernatur.</p>
+                <div ID="letras-fondo" id="letras">
+                    <p>LETRAS DE FONDO</p>
+                    <img src="dragon-1.svg" alt="descripción de la imagen" id="imagen1">
+                    <img src="dragon-2.svg" alt="descripción de la imagen" id="imagen2">
+                </div>
+            </div>
+        </article>
+    </main>
+    <script>
+        var image = document.getElementById("imagen1");
+
+        image.addEventListener("click", function () {
+            document.body.style.backgroundColor = "blue";
+        });
+
+        var image2 = document.getElementById("imagen2");
+
+        image2.addEventListener("click", function () {
+            document.body.style.backgroundColor = "red";
+        });
+
+        var body = document.getElementById("body");
+        body.addEventListener("click", changeBackgroundColor);
+
+        function changeBackgroundColor() {
+            body.style.backgroundColor = getRandomColor();
+        }
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+>>>>>>> c0f0d27fd2f8327bf369b640adf95270a2e1e3bf
 </body>
 </html>
