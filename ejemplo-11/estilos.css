@@ -1,12 +1,13 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 .main {
     background-color: rgb(166, 125, 125);
+    display: flex;
     justify-content: center;
     flex-direction: column;
-    display: flex;
     align-items: center;
 }
 
