@@ -1,15 +1,15 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    display: flex;
 }
 
-.main {
+main {
     background-color: rgb(166, 125, 125);
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+    
+    }
 
 .contenedor {
     border: 5px solid black;
