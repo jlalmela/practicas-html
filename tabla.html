@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabla</title>
+	<style>
+		table {
+			margin-top: 20px;
+			border-collapse: collapse;
+		}
+		td {
+			height: 50px;
+			border: 1px solid black;
+			padding: 5px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<label for="alto">Alto de celda:</label>
+	<input type="text" id="alto">
+	<label for="margen">Margen superior:</label>
+	<input type="text" id="margen">
+    <button onclick="generarTabla()">Generar tabla</button>
+
+    <div id="tabla"></div>
+
+    <script type="text/javascript">
+    	function generarTabla() {
+    		var alto = document.getElementById('alto').value + 'px';
+    		var margen = document.getElementById('margen').value + 'px';
+
+    		var tablaHTML = '<table style="margin-top:' + margen + ';">';
+    		for (var i = 0; i < 3; i++) {
+    			tablaHTML += '<tr>';
+    			for (var j = 0; j < 8; j++) {
+    				tablaHTML += '<td style="height:' + alto + ';">Celda ' + (i+1) + '-' + (j+1) + '</td>';
+    			}
+    			tablaHTML += '</tr>';
+    		}
+    		tablaHTML += '</table>';
+
+    		document.getElementById('tabla').innerHTML = tablaHTML;
+    	}
+    </script>
+
+</body>
+
+</html>
