@@ -20,24 +20,20 @@
 	<input type="text" id="alto">
 	<label for="margen">Margen superior:</label>
 	<input type="text" id="margen">
-	<label for="ancho">Ancho tabla:</label>
-	<input type="text" id="ancho">
     <button onclick="generarTabla()">Generar tabla</button>
 
     <div id="tabla"></div>
 
     <script type="text/javascript">
     	function generarTabla() {
-    		var alto = document.getElementById('alto').value + 'cm';
-    		var margen = document.getElementById('margen').value + 'cm';
-		var ancho = document.getElementById('ancho').value + 'cm';
+    		var alto = document.getElementById('alto').value + 'px';
+    		var margen = document.getElementById('margen').value + 'px';
 
     		var tablaHTML = '<table style="margin-top:' + margen + ';">';
-    		for (var i = 0; i < 8; i++) {
+    		for (var i = 0; i < 3; i++) {
     			tablaHTML += '<tr>';
-    			for (var j = 0; j < 3; j++) {
-
-				tablaHTML += '<td style="height:' + alto + '; width:' + ancho + '">Celda ' + (i+1) + '-' + (j+1) + '</td>';
+    			for (var j = 0; j < 8; j++) {
+    				tablaHTML += '<td style="height:' + alto + ';">Celda ' + (i+1) + '-' + (j+1) + '</td>';
     			}
     			tablaHTML += '</tr>';
     		}
