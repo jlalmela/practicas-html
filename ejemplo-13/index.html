@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .container {
+    opacity: 0;
+    width: 1000PX;
+    height: 200PX;
+    background-color: rgb(169, 61, 115);
+  }
+
+  .container#c1 {
+    background-color: green;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .container#c2 {
+    background-color: rgb(35, 47, 35);
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .container#c3 {
+    background-color: rgb(45, 61, 106);
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .container#c4 {
+    background-color: rgb(208, 184, 99);
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .container#c5 {
+    background-color: rgb(59, 42, 23);
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .container#c6 {
+    background-color: rgb(32, 84, 149);
+    padding: 20px;
+    margin: 20px;
+  }
+
+
+  /* Seleccionamos los contenedores que estén a partir de cierto punto en la página */
+  @media screen and (min-width: 768px) {
+    .container {
+      animation: aparecer 0.5s ease-out forwards;
+      /* Movemos la animación aquí */
+    }
+  }
+
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<body>
+  <div class="container" id="c1">Contenedor 1</div>
+  <div class="container" id="c2">Contenedor 2</div>
+  <div class="container" id="c3">Contenedor 3</div>
+  <div class="container" id="c4">Contenedor 4</div>
+  <div class="container" id="c5">Contenedor 5</div>
+  <div class="container" id="c6">Contenedor 6</div>
+
+  <script>
+    const containers = document.querySelectorAll('.container');
+    const windowHeight = window.innerHeight;
+    let visibleContainers = 0;
+
+    function checkContainers() {
+      containers.forEach((container, index) => {
+        const containerTop = container.getBoundingClientRect().top;
+        if (containerTop < windowHeight * 0.8 && !container.classList.contains('visible')) {
+          container.classList.add('visible');
+          container.style.animationDelay = `${0.5 + index * 0.2}s`;
+        }
+      });
+    }
+
+    checkContainers();
+    window.addEventListener('scroll', checkContainers);
+  </script>
+</body>
+
+</html>
