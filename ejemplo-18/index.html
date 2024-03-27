@@ -13,11 +13,11 @@
 
     // Recorrer las filas del fichero CSV
     const $tbody = document.querySelector("tbody");
-    const $filas = $tbody.querySelectorAll("tr");
+    const $filas = Array.from($tbody.querySelectorAll("tr"));
 
-    for (const $fila of $filas) {
+    $filas.forEach((fila) => {
       // Obtener el DNI de la fila
-      const $dni = $fila.querySelector("td:first-child");
+      const $dni = fila.querySelector("td:first-child");
       const dni = $dni.textContent;
 
       // Generar el código QR para el DNI
@@ -27,8 +27,8 @@
       qrcode.render("qrcode.png");
 
       // Escribir el código QR en la tabla
-      $fila.querySelector("td:nth-child(3)").innerHTML = `<img src="qrcode.png" alt="Código QR" />`;
-    }
+      fila.querySelector("td:nth-child(3)").innerHTML = `<img src="qrcode.png" alt="Código QR" />`;
+    });
   </script>
   <style>
     table {
