@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hoja de cálculo con código QR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="qrcode.min.js"></script>
+  <script>
+    // Importar la biblioteca `qrcode.min.js`
+    const QRCode = require("qrcode.min");
+
+    // Recorrer las filas del fichero CSV
+    const $tbody = document.querySelector("tbody");
+    const $filas = $tbody.querySelectorAll("tr");
+
+    for (const $fila of $filas) {
+      // Obtener el DNI de la fila
+      const $dni = $fila.querySelector("td:first-child");
+      const dni = $dni.textContent;
+
+      // Generar el código QR para el DNI
+      const qrcode = new QRCode();
+      qrcode.addData(dni);
+      qrcode.setSize(150);
+      qrcode.render("qrcode.png");
+
+      // Escribir el código QR en la tabla
+      $fila.querySelector("td:nth-child(3)").innerHTML = `<img src="qrcode.png" alt="Código QR" />`;
+    }
+  </script>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+
+    /* Centrar el código QR en la celda */
+    td img {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+  <table>
+    <thead>
+      <tr>
+        <th>DNI</th>
+        <th>Nombre y apellidos</th>
+        <th>Código QR</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php
+      // Importar los datos del fichero CSV
+      $datos = file_get_contents("datos.csv");
+      $filas = explode("\n", $datos);
+
+      // Recorrer las filas del fichero CSV
+      foreach ($filas as $fila) {
+        // Separar los datos de la fila
+        $datos = explode(",", $fila);
+
+        // Escribir el DNI en la tabla
+        echo "<tr><td>{$datos[0]}</td>";
+
+        // Escribir el nombre y apellidos en la tabla
+        echo "<td>{$datos[1]}</td>";
+
+        // Generar el código QR para el DNI
+        $qrcode = new QRCode();
+        $qrcode->addData($datos[0]);
+        $qrcode->setSize(150);
+        $qrcode->render("qrcode.png");
+
+        // Escribir el código QR en la tabla
+        echo "<td><img src=\"qrcode.png\" alt=\"Código QR\" /></td></tr>";
+      }
+      ?>
+    </tbody>
+  </table>
+</body>
+</html>
