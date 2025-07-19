@@ -23,7 +23,7 @@ html, body {
   left: 0;
   width: 100%; /* Las imágenes ocupan el 100% del ancho del contenedor */
   height: 100%; /* Las imágenes ocupan el 100% del alto del contenedor */
-  object-fit: cover; /* ¡Este es el cambio clave! Hace que la imagen cubra todo el espacio, recortando si es necesario */
+  object-fit: cover; /* ¡Hace que la imagen cubra todo el espacio, recortando si es necesario! */
   /* Transiciones suaves para la opacidad y la transformación */
   transition: opacity 2s ease-in-out, transform 2s ease-in-out;
   opacity: 0; /* Todas las imágenes están ocultas por defecto */
