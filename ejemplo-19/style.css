@@ -14,6 +14,8 @@ html, body {
   width: 100vw;
   height: 100vh;
   position: relative;
+  /* El cursor cambia para indicar que es clickeable */
+  cursor: pointer;
 }
 
 .contenedor img {
@@ -22,17 +24,34 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain; /* usa cover si prefieres llenar toda la pantalla con recorte */
-  transition: opacity 2s ease-in-out;
+  object-fit: contain; /* Usa cover si prefieres llenar toda la pantalla con recorte */
+  /* Añadimos 'transform' a la transición para un efecto suave */
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+  /* Por defecto, ambas imágenes estarán ocultas, excepto la que se active explícitamente */
   opacity: 0;
   z-index: 0;
 }
 
+/* Estado inicial: #img1 visible y #img2 oculta */
 #img1 {
   opacity: 1;
-  z-index: 1;
+  z-index: 1; /* Asegura que img1 esté por encima inicialmente */
+  transform: scale(1); /* Escala inicial para img1 */
 }
 
 #img2 {
-  z-index: 2;
+  opacity: 0; /* img2 oculta inicialmente */
+  z-index: 2; /* img2 siempre estará por encima cuando sea visible */
+  transform: scale(0.9); /* Escala inicial para img2 (un poco más pequeña) */
+}
+
+/* Cuando el contenedor tenga la clase 'mostrar-img2', activamos el estado de img2 y desactivamos img1 */
+.contenedor.mostrar-img2 #img1 {
+  opacity: 0; /* Oculta img1 */
+  transform: scale(1.1); /* Aplica una transformación a img1 al salir (ej. agrandar) */
+}
+
+.contenedor.mostrar-img2 #img2 {
+  opacity: 1; /* Muestra img2 */
+  transform: scale(1); /* Restaura la escala de img2 a su tamaño original */
 }
