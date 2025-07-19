@@ -7,49 +7,70 @@
 html, body {
   width: 100%;
   height: 100%;
-  overflow: hidden; /* Evita barras de desplazamiento si el contenido excede el viewport */
+  /* Elimina overflow: hidden para permitir el scroll si es necesario */
 }
 
 .contenedor {
-  width: 100vw; /* El ancho del viewport */
-  height: 100vh; /* El alto del viewport */
+  width: 100%;
+  max-width: 100vw;
+  height: 100vw; /* Relación cuadrada por defecto */
+  max-height: 100vh;
+  aspect-ratio: 16/9; /* Mantiene proporción en pantallas grandes */
   position: relative;
-  cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contenedor img {
-  position: absolute; /* Permite superponer las imágenes */
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Las imágenes ocupan el 100% del ancho del contenedor */
-  height: 100%; /* Las imágenes ocupan el 100% del alto del contenedor */
-  object-fit: cover; /* ¡Hace que la imagen cubra todo el espacio, recortando si es necesario! */
-  /* Transiciones suaves para la opacidad y la transformación */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: opacity 2s ease-in-out, transform 2s ease-in-out;
-  opacity: 0; /* Todas las imágenes están ocultas por defecto */
-  z-index: 0; /* Capa base */
+  opacity: 0;
+  z-index: 0;
 }
 
-/* Estado inicial: #img1 visible y #img2 oculta */
 #img1 {
-  opacity: 1; /* img1 es visible al inicio */
-  z-index: 1; /* Asegura que img1 esté por encima inicialmente */
-  transform: scale(1); /* Escala inicial para img1 */
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1);
 }
 
 #img2 {
-  opacity: 0; /* img2 oculta inicialmente */
-  z-index: 2; /* img2 siempre estará por encima de img1 cuando sea visible */
-  transform: scale(0.9); /* Escala inicial para img2 (un poco más pequeña para el efecto de zoom) */
+  opacity: 0;
+  z-index: 2;
+  transform: scale(0.9);
 }
 
-/* Cuando el contenedor tiene la clase 'mostrar-img2', se activa la transición */
 .contenedor.mostrar-img2 #img1 {
-  opacity: 0; /* Oculta img1 */
-  transform: scale(1.1); /* Aplica una transformación a img1 al salir (ej. la hace un poco más grande) */
+  opacity: 0;
+  transform: scale(1.1);
 }
 
 .contenedor.mostrar-img2 #img2 {
-  opacity: 1; /* Muestra img2 */
-  transform: scale(1); /* Restaura la escala de img2 a su tamaño original (efecto de zoom-in) */
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 600px) {
+  .contenedor {
+    width: 100vw;
+    height: 56vw; /* Mantiene proporción 16:9 */
+    min-height: 200px;
+    aspect-ratio: unset;
+  }
+
+  .contenedor img {
+    width: 100vw;
+    height: 56vw;
+    min-height: 200px;
+    object-fit: cover;
+  }
 }
